@@ -8,21 +8,25 @@
 </head>
 <body>
 
-    <h1>Hello! I'm Austin!</h1>
+    <h1>Hello, I'm Austin!</h1>
+    <h2>Full Stack Web Developer</h2>
+
     <header>
         <nav>
             <a href="#languages">Languages</a>
             <a href="#skills">Technical Skills</a>
             <a href="#contact">Contact</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Links</a>
         </nav>
     </header>
 
     <div class="headshot">
         <img src="headshot.jpg" alt="My headshot">
     </div>
+    
     <main>
         <section id="languages">
-            <h2>Programming Languages</h2>
     <div class="language">
         <img src="java.png" alt="Java" class="bigger-image">
     </div>
@@ -38,7 +42,27 @@
     <div class="language">
         <img src="python.png" alt="Python" class="bigger-image">
     </div>
+
         </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Tenmo</h3>
+                <p>Peer-to-peer money transfer application allowing users to send, request, and approve money transfers. Front-end is a command-line application communicating with a RESTful API server in the back-end.</p>
+                <p>Technologies: Java, Spring Boot, Spring Security, PostgreSQL, pgAdmin, Postman, RESTful APIs, Agile Methodologies, CI/CD, Microservices</p>
+            <div class="project">
+                <h3>Vendo-Matic 800</h3>
+                <p>Virtual vending machine application with command-line interface allowing users to deposit money, choose a product, and return the correct change. Inventory is loaded via a text file and transactions are also logged to a text file.</p>
+                <p>Technologies: Java, Java Swing, Agile Methodologies, CI/CD</p>
+            </div>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Project 3 description</p>
+            </div>
+        </section>
+
+        
         <section id="skills">
             <h2>Technical Skills</h2>
             <table>
@@ -61,11 +85,14 @@
                         <ul>
                             <li>pgAdmin</li>
                             <li>Microservices</li>
+                            <li>Java Swing</li>
                         </ul>
                     </td>
                 </tr>
             </table>
         </section>
+
+
         <section id="contact">
             <h2>Contact Me</h2>
             <form action="https://formspree.io/f/xvonvplp" method="POST">
@@ -80,10 +107,10 @@
               
                 <button type="submit">Send Message</button>
               </form>
-              
         </section>
     </main>
-    <footer>
+
+    <footer id="footer">
         <a href="https://www.linkedin.com/in/richard-austin-johnson/" target="_blank">
             <img src="linkedin.png" alt="LinkedIn" class="footer-icon">
         </a>
