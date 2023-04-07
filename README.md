@@ -1,6 +1,6 @@
 # Richard Johnson's Portfolio
 
-This repository contains the source code for Richard Johnson's personal portfolio website. The website showcases Richard's programming languages, technical skills, and provides a contact form for reaching out regarding job opportunities.
+This repository contains the source code for my personal portfolio website. The website showcases my familiar programming languages, technical skills, and provides a contact form for reaching out regarding job opportunities.
 
 ## Technologies Used
 
