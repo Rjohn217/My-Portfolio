@@ -13,7 +13,7 @@ This repository contains the source code for my personal portfolio website. The 
 - Responsive design
 - Programming languages section with images representing each language
 - Technical skills section displayed as a table
-- Contact form for easy communication
+- Contact form for easy communication using Formspree
 - Footer with clickable thumbnail icons for LinkedIn and GitHub profiles
 
 ## Setup
