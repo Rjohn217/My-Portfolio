@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+.headshot {
+    text-align: center;
+}
+
+.headshot img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: right;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.languages {
+    text-align: center;
+}
+
+.language {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.language img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.bigger-image {
+    width: 100px;
+    height: 100px;
+}
+
+.skills {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea, button {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: #555;
+}
+
+.footer-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.footer-icon:hover {
+    opacity: 0.7;
+}
