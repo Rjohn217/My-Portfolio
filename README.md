@@ -27,10 +27,6 @@ To set up the portfolio website on your local machine, follow these steps:
 
 You can easily customize the content, layout, and styling of this portfolio website by modifying the HTML, CSS, and JavaScript files.
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Contact
 
 Richard Johnson
