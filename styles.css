@@ -1,141 +1,170 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1c1c1c;
+    color: #c3c3c3
+  }
+  
+  header {
+    background-color: #282828;
+    color: white;
+    padding: 1rem;
     text-align: center;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0;
-    text-align: center;
-    padding-top: 3px;
-}
-
-.headshot {
-    text-align: center;
-}
-
-.headshot img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: right;
-}
-
-header {
-    padding: 20px;
-}
-
-nav {
-    text-align: center;
-}
-
-nav a {
-    color: #333;
+  }
+  
+  nav {
+    margin: 1rem 0;
+  }
+  
+  nav a {
+    color: #8ea1ff;
     text-decoration: none;
-    margin-right: 10px;
-}
-
-nav a:hover {
-    color: #555;
-}
-
-main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-.languages {
-    text-align: center;
-}
-
-.language {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.language img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.bigger-image {
-    width: 100px;
-    height: 100px;
-}
-
-.skills {
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    margin: 0 auto;
-}
-
-td {
-    vertical-align: top;
-    padding: 10px;
-}
-
-form {
+    padding: 0.5rem 1rem;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    color: #c991ff
+  }
+  
+  .card-container {
     display: flex;
     flex-direction: column;
-}
-
-label, input, textarea, button {
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-footer {
+    align-items: center;
+  }
+  
+  .card {
+    background-color: #282828;
+    border: 1px solid #8ea1ff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #8ea1ff;
+    margin: 10px;
     padding: 20px;
     text-align: center;
+    width: 600px;
+  }
+  
+  .front {
+    color: #8ea1ff;
+  }
+  
+  .back {
+    color: whitesmoke;
+  }
+  
+  .card .front img {
+    max-width: 100%;
+  }
+  
+  .card .front h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  .card .back h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  .card .back p {
+    margin-bottom: 1rem;
+  }
+  
+  .card .back form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card .back label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card .back input,
+  .card .back textarea {
+    margin-bottom: 1rem;
+  }
+  
+  .card .back button {
+    background: #3b5998;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+  
+  .card .back button:hover {
+    background: #333;
+  }
+
+  .card-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card-row .card {
+    margin: 1rem;
+    flex: 1 1 300px;
+    max-width: calc(33% - 2rem);
+  }
+  
+  .card.about {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+  
+.card.languages .language img {
+  width: 120px;
+  height: auto;
 }
 
-footer a {
-    color: #333;
-    text-decoration: none;
-    margin-right: 10px;
-}
+.card.skills table {
+    font-size: 1.2rem;
+    border-collapse: separate;
+    border-spacing: 15px;
+  }
+  
+  .card.skills td {
+    padding: 10px;
+  }
+  
+  .languages .back section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-footer a:hover {
-    color: #555;
-}
-
-.footer-icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-    margin-right: 10px;
-}
-
-.footer-icon:hover {
-    opacity: 0.7;
-}
+  .headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 80% center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about .front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+  }
+  
