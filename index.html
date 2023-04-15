@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Johnson's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Richard Austin Johnson</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="#about">About Me</a>
             <a href="#languages">Languages</a>
+            <a href="#projects">Projects</a>
             <a href="#skills">Technical Skills</a>
             <a href="#contact">Contact</a>
-            <a href="#projects">Projects</a>
+            
         </nav>
     </header>
 
-    <div class="scroll-container">
-        <section id="about" class="intro-section">
-            <img src="headshot.jpg" alt="Richard Johnson" class="headshot">
-            <div class="about-text">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section id="about" class="intro-section">
+              <img src="headshot.jpg" alt="Richard Johnson" class="headshot">
+              <div class="about-text">
                 <h1>Richard Austin Johnson</h1>
                 <h2>Full Stack Software Developer</h2>
-                <p>Hello, my name is Richard Johnson, and I am an enthusiastic software developer who recently graduated from Merit America's online Java web development program. Although I am at the early stage of my career, I am highly motivated and eager to learn, grow, and contribute to the world of software development...</p>
-            </div>
-        </section>
-
-        <section id="languages" class="languages">
-            <h2>Languages</h2>
-            <div class="language-grid">
+                <p>Hello, my name is Richard Johnson, and I am an enthusiastic software developer who recently graduated from Merit America's online Java web development program. <br>Although I am at the early stage of my career, I am highly motivated and eager to learn, grow, and contribute to the world of software development.</p>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section id="languages" class="languages">
+              <h2>Languages</h2>
+              <div class="language-grid">
                 <div class="language"><img src="java.png" alt="Java" class="bigger-image"></div>
                 <div class="language"><img src="javascript.png" alt="JavaScript"></div>
                 <div class="language"><img src="html.png" alt="HTML" class="bigger-image"></div>
                 <div class="language"><img src="css.png" alt="CSS"></div>
                 <div class="language"><img src="python.png" alt="Python" class="bigger-image"></div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project">
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section id="projects" class="projects">
+              <h2>Projects</h2>
+              <div class="project">
                 <h3>Tenmo</h3>
                 <p>Peer-to-peer money transfer application allowing users to send, request, and approve money transfers...</p>
-            </div>
-            <div class="project">
+              </div>
+              <div class="project">
                 <h3>Vendo-Matic 800</h3>
                 <p>Virtual vending machine application with command-line interface allowing users to deposit money, choose a product, and return the correct change...</p>
-            </div>
-        </section>
-
-        <section id="skills" class="skills">
-            <h2>Technical Skills</h2>
-            <table>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide" id="skills">
+            <section id="skills" class="skills">
+              <h2>Technical Skills</h2>
+              <table>
                 <tr>
-                    <td>
-                        <ul>
-                            <li>PostgreSQL</li>
-                            <li>Spring Frameworks</li>
-                            <li>Agile Methodologies</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>RESTful APIs</li>
-                            <li>Postman</li>
-                            <li>CI/CD</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>pgAdmin</li>
-                            <li>Microservices</li>
-                            <li>Java Swing</li>
-                        </ul>
-                    </td>
+                  <td>
+                    <ul>
+                      <li>PostgreSQL</li>
+                      <li>Spring Frameworks</li>
+                      <li>Agile Methodologies</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>RESTful APIs</li>
+                      <li>Postman</li>
+                      <li>CI/CD</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>pgAdmin</li>
+                      <li>Microservices</li>
+                      <li>Java Swing</li>
+                    </ul>
+                  </td>
                 </tr>
-            </table>
-        </section>
-
-        <section id="contact" class="contact">
+              </table>
+            </section>
+          </div>
+          <div class="swiper-slide" id="contact">
             <h2>Let's Work Together</h2>
             <h3>Contact Me</h3>
             <form action="https://formspree.io/f/xvonvplp" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="_replyto" required>
-
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-
                 <button type="submit">Send Message</button>
             </form>
-        </section>
-    </div>
+        </div>
+      </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
-
+</html> 
