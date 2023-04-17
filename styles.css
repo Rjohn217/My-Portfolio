@@ -114,14 +114,25 @@ button:hover {
 }
 
 .languages {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: auto;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   justify-items: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  margin-top: 100px;
+  margin-left: 600px;
+  
+}
+
+.languages h2 {
+  font-size: 36px;
+  position: absolute;
+  bottom: 80%;
+  left: 44%;
+  padding-bottom: 30px;
+
 }
 
 
